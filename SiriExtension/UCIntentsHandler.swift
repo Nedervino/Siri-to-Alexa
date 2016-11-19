@@ -11,7 +11,7 @@ import Intents
 class UCIntentsHandler: INExtension {
 
     override func handler(for intent: INIntent) -> Any? {
-        if intent is INSendMessageIntent {
+        if intent is INSendMessageIntent || intent is INSearchForMessagesIntent {
             return UCSendMessageIntentHandler()
         }
 

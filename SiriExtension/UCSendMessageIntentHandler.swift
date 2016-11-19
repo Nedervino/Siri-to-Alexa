@@ -90,4 +90,21 @@ class UCSendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
             completion(INSendMessageIntentResponse(code: .failure, userActivity: nil))
         }
     }
+    
+//    func handle(searchForMessages intent: INSearchForMessagesIntent, completion: @escaping (INSearchForMessagesIntentResponse) -> Void) {
+//        // Implement your application logic to find a message that matches the information in the intent.
+//        
+//        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSearchForMessagesIntent.self))
+//        let response = INSearchForMessagesIntentResponse(code: .success, userActivity: userActivity)
+//        // Initialize with found message's attributes
+//        response.messages = [INMessage(
+//            identifier: "identifier",
+//            content: "I am so excited about SiriKit!",
+//            dateSent: Date(),
+//            sender: INPerson(personHandle: INPersonHandle(value: "sarah@example.com", type: .emailAddress), nameComponents: nil, displayName: "Sarah", image: nil,  contactIdentifier: nil, customIdentifier: nil),
+//            recipients: [INPerson(personHandle: INPersonHandle(value: "+1-415-555-5555", type: .phoneNumber), nameComponents: nil, displayName: "John", image: nil,  contactIdentifier: nil, customIdentifier: nil)]
+//            )]
+//        completion(response)
+//    }
+
 }
