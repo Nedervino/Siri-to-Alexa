@@ -17,11 +17,11 @@
 }
 
 - (NSString *)sendMessage:(NSString *)message toRecipients:(NSArray *)recipients {
-    NSLog(message);
+    //NSLog(message);
     NSString *encoded = [message stringByReplacingOccurrencesOfString:@" " withString:@"+"];
-    NSLog(encoded);
+    //NSLog(encoded);
     // Sending a synchronous message here...
-    NSString *request = [@"https://smsdoctors.herokuapp.com/hackathon?request=" stringByAppendingString:encoded];
+    NSString *request = [@"https://smsdoctors.herokuapp.com/alexa?q=" stringByAppendingString:encoded];
     //NSString *encoded = [request stringByReplacingOccurancesOfString:@" " withString:@"%20"];
     NSLog(request);
     NSURL *url1 = [NSURL URLWithString:request];
