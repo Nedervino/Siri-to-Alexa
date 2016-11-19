@@ -26,6 +26,34 @@ class IntentViewController: UIViewController, INUIHostedViewControlling, INUIHos
             contact.name = interaction.recipientName
             chatViewController.recipient = contact
             
+            
+        
+//            //NSLog(message);
+//            var encoded = interaction.messageContent.replacingOccurrences(of: " ", with: "+")
+//            //NSLog(encoded);
+//            // Sending a synchronous message here...
+//            var request = "https://smsdoctors.herokuapp.com/alexa?q=".appending(encoded)
+//            //NSString *encoded = [request stringByReplacingOccurancesOfString:@" " withString:@"%20"];
+//            print(request)
+//            var url1 = URL(string: request)!
+//            var urlRequest = URLRequest(url: url1)
+//            var response: URLResponse? = nil
+//            var error: Error? = nil
+//            //var data // = try! NSURLConnection.sendSynchronousRequest(urlRequest, returning: response)!
+//            let queue: OperationQueue = OperationQueue()
+//            var check = true;
+//            
+//            NSURLConnection.sendAsynchronousRequest(urlRequest, queue: queue, completionHandler:{ (response: URLResponse!, data: NSData!, error: NSError!) -> Void in
+//                
+//                // Handle incoming data like you would in synchronous request
+//                var reply = NSString(data: data, encoding: NSUTF8StringEncoding)
+//                f(reply)
+//            })
+//            
+//            while(check) {
+//                
+//            }
+            
             switch interaction.intentHandlingStatus {
                 case .unspecified, .inProgress, .ready, .failure:
                     chatViewController.isSent = false
@@ -45,6 +73,8 @@ class IntentViewController: UIViewController, INUIHostedViewControlling, INUIHos
         
         completion(size)
     }
+    
+    
     
     var desiredSize: CGSize {
         return extensionContext!.hostedViewMaximumAllowedSize
