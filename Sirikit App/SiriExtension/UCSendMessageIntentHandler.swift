@@ -9,6 +9,8 @@
 import Foundation
 import Intents
 import UnicornCore
+import AVFoundation
+
 
 class UCSendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
     
@@ -83,8 +85,20 @@ class UCSendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
             print("sending message")
             let answer = UCAccount.shared().sendMessage(intent.content, toRecipients: intent.recipients)
             print(answer)
+            
+            let chatViewController = UCChatViewController()
+            chatViewController.messageContent = "asd"
             let success = true
-            completion(INSendMessageIntentResponse(code: success ? .success : .failure, userActivity: nil))
+            
+            
+            let utterance = AVSpeechUtterance(string: "William de derde was soevereine Prins van Oranje vanaf de geboorte schot houder van Holland Zeeland Utrecht Gelderland het over nok zo in de Nederlandse Republiek van 1672 en koning van Engeland Ierland en Schotland van 1689 tot aan zijn dood")
+            utterance.voice = AVSpeechSynthesisVoice(language: "nl-NL")
+            utterance.rate = 0.45
+            
+            let synthesizer = AVSpeechSynthesizer()
+            synthesizer.speak(utterance)
+            
+            completion(INSendMessageIntentResponse(code: success ? .failureRequiringAppLaunch : .failure, userActivity: nil))
         }
         else {
             completion(INSendMessageIntentResponse(code: .failure, userActivity: nil))
