@@ -1,0 +1,14 @@
+{
+   "results": [
+      {
+         "alternatives": [
+            {
+               "confidence": 0.972, 
+               "transcript": "in Seattle it's fifty three degrees with cloudy skies tonight you can look for showers with a low of forty four degrees "
+            }
+         ], 
+         "final": true
+      }
+   ], 
+   "result_index": 0
+}

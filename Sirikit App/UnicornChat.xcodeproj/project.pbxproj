@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CF130E4F257CF555714E356 /* Pods_UnicornChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4410C990FDE5C509CE1BEE98 /* Pods_UnicornChat.framework */; };
 		522FAE651D08855B009BC1A0 /* chatmockdraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 522FAE641D08855B009BC1A0 /* chatmockdraft.png */; };
 		522FAE661D08855B009BC1A0 /* chatmockdraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 522FAE641D08855B009BC1A0 /* chatmockdraft.png */; };
 		522FAE681D0885A4009BC1A0 /* chatmock.png in Resources */ = {isa = PBXBuildFile; fileRef = 522FAE671D0885A4009BC1A0 /* chatmock.png */; };
@@ -20,6 +21,8 @@
 		5253B6901CFDDD3D00F67727 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5253B68E1CFDDD3D00F67727 /* MainInterface.storyboard */; };
 		5253B6941CFDDD3D00F67727 /* SiriUIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5253B6891CFDDD3D00F67727 /* SiriUIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		843FAC4B1CFE99CE0079D035 /* UnicornCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC3F1C1CF9170F00D3D08A /* UnicornCore.framework */; };
+		8458CC5E1DE0741E00F263F4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8458CC5D1DE0741E00F263F4 /* Podfile */; };
+		849DBB711DE07A5900008343 /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849DBB701DE07A5900008343 /* SpeechKit.framework */; };
 		84AC3F1F1CF9170F00D3D08A /* UnicornCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AC3F1E1CF9170F00D3D08A /* UnicornCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84AC3F241CF9170F00D3D08A /* UnicornCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC3F1C1CF9170F00D3D08A /* UnicornCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84AC3F2E1CF9187F00D3D08A /* UnicornCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC3F1C1CF9170F00D3D08A /* UnicornCore.framework */; };
@@ -99,6 +102,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0EC97EFC412E9BA1666919D2 /* Pods-UnicornChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnicornChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnicornChat/Pods-UnicornChat.release.xcconfig"; sourceTree = "<group>"; };
+		4410C990FDE5C509CE1BEE98 /* Pods_UnicornChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnicornChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		520CB0D21CEA2617003E80C1 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		522FAE641D08855B009BC1A0 /* chatmockdraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatmockdraft.png; sourceTree = "<group>"; };
 		522FAE671D0885A4009BC1A0 /* chatmock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatmock.png; sourceTree = "<group>"; };
@@ -110,6 +115,8 @@
 		5253B68C1CFDDD3D00F67727 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		5253B68F1CFDDD3D00F67727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5253B6911CFDDD3D00F67727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8458CC5D1DE0741E00F263F4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		849DBB701DE07A5900008343 /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechKit.framework; path = "../Ti.SpeechKit-master/iOS/SDK/SpeechKit.framework"; sourceTree = "<group>"; };
 		84AC3F1C1CF9170F00D3D08A /* UnicornCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnicornCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AC3F1E1CF9170F00D3D08A /* UnicornCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnicornCore.h; sourceTree = "<group>"; };
 		84AC3F201CF9170F00D3D08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,6 +140,7 @@
 		92508E331D02381800944860 /* INInteraction+UnicornCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INInteraction+UnicornCore.h"; sourceTree = "<group>"; };
 		92508E341D02381800944860 /* INInteraction+UnicornCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "INInteraction+UnicornCore.m"; sourceTree = "<group>"; };
 		B5E465061D9F11E900F114F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA7B4D3CFB3837600C671BC1 /* Pods-UnicornChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnicornChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnicornChat/Pods-UnicornChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF130E4F257CF555714E356 /* Pods_UnicornChat.framework in Frameworks */,
+				849DBB711DE07A5900008343 /* SpeechKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +185,8 @@
 			children = (
 				84AC3F1D1CF9170F00D3D08A /* UnicornCore */,
 				520CB0D21CEA2617003E80C1 /* IntentsUI.framework */,
+				4410C990FDE5C509CE1BEE98 /* Pods_UnicornChat.framework */,
+				849DBB701DE07A5900008343 /* SpeechKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,12 +235,14 @@
 		84C6A77D1CE433A200E22048 = {
 			isa = PBXGroup;
 			children = (
+				8458CC5D1DE0741E00F263F4 /* Podfile */,
 				B5E465061D9F11E900F114F1 /* README.md */,
 				84C6A7881CE433A200E22048 /* UnicornChat */,
 				84C6A7A01CE4413400E22048 /* SiriExtension */,
 				5253B68B1CFDDD3D00F67727 /* SiriUIExtension */,
 				520CB0D11CEA2617003E80C1 /* Frameworks */,
 				84C6A7871CE433A200E22048 /* Products */,
+				923595A8FE065C6D971C1AB8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +278,15 @@
 				84C6A7AB1CE4573E00E22048 /* UCSendMessageIntentHandler.swift */,
 			);
 			path = SiriExtension;
+			sourceTree = "<group>";
+		};
+		923595A8FE065C6D971C1AB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA7B4D3CFB3837600C671BC1 /* Pods-UnicornChat.debug.xcconfig */,
+				0EC97EFC412E9BA1666919D2 /* Pods-UnicornChat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,11 +348,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C6A7981CE433A200E22048 /* Build configuration list for PBXNativeTarget "UnicornChat" */;
 			buildPhases = (
+				6E14412CDC8796BCC60BE006 /* [CP] Check Pods Manifest.lock */,
 				84C6A7821CE433A200E22048 /* Sources */,
 				84C6A7831CE433A200E22048 /* Frameworks */,
 				84C6A7841CE433A200E22048 /* Resources */,
 				84C6A7AA1CE4413400E22048 /* Embed App Extensions */,
 				84AC3F281CF9170F00D3D08A /* Embed Frameworks */,
+				E51A82A8CD9F80DBBF51F61C /* [CP] Embed Pods Frameworks */,
+				865EEDC1902A425EE1BFAEF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,22 +399,22 @@
 				TargetAttributes = {
 					5253B6881CFDDD3D00F67727 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5N54Q578V4;
+						DevelopmentTeam = GVGZ3S662U;
 						ProvisioningStyle = Automatic;
 					};
 					84AC3F1B1CF9170F00D3D08A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5N54Q578V4;
+						DevelopmentTeam = GVGZ3S662U;
 						ProvisioningStyle = Automatic;
 					};
 					84C6A7851CE433A200E22048 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5N54Q578V4;
+						DevelopmentTeam = GVGZ3S662U;
 						ProvisioningStyle = Automatic;
 					};
 					84C6A79E1CE4413400E22048 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5N54Q578V4;
+						DevelopmentTeam = GVGZ3S662U;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -440,6 +466,7 @@
 			files = (
 				84C6A7941CE433A200E22048 /* LaunchScreen.storyboard in Resources */,
 				84C6A7911CE433A200E22048 /* Assets.xcassets in Resources */,
+				8458CC5E1DE0741E00F263F4 /* Podfile in Resources */,
 				84C6A78F1CE433A200E22048 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +479,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E14412CDC8796BCC60BE006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		865EEDC1902A425EE1BFAEF9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnicornChat/Pods-UnicornChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E51A82A8CD9F80DBBF51F61C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnicornChat/Pods-UnicornChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5253B6851CFDDD3D00F67727 /* Sources */ = {
@@ -549,10 +624,10 @@
 		5253B6951CFDDD3D00F67727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5N54Q578V4;
+				DEVELOPMENT_TEAM = GVGZ3S662U;
 				INFOPLIST_FILE = SiriUIExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UnicornChat500.SiriUIExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode2.UnicornChat500.SiriUIExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -562,10 +637,10 @@
 		5253B6961CFDDD3D00F67727 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5N54Q578V4;
+				DEVELOPMENT_TEAM = GVGZ3S662U;
 				INFOPLIST_FILE = SiriUIExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UnicornChat500.SiriUIExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode2.UnicornChat500.SiriUIExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -580,7 +655,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5N54Q578V4;
+				DEVELOPMENT_TEAM = GVGZ3S662U;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -604,7 +679,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5N54Q578V4;
+				DEVELOPMENT_TEAM = GVGZ3S662U;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -713,15 +788,16 @@
 		};
 		84C6A7991CE433A200E22048 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7B4D3CFB3837600C671BC1 /* Pods-UnicornChat.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5N54Q578V4;
+				DEVELOPMENT_TEAM = GVGZ3S662U;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = UnicornChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UnicornChat500";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode2.UnicornChat500";
 				PRODUCT_NAME = Alexa;
 				SWIFT_VERSION = 3.0;
 			};
@@ -729,15 +805,16 @@
 		};
 		84C6A79A1CE433A200E22048 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EC97EFC412E9BA1666919D2 /* Pods-UnicornChat.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5N54Q578V4;
+				DEVELOPMENT_TEAM = GVGZ3S662U;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = UnicornChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UnicornChat500";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode2.UnicornChat500";
 				PRODUCT_NAME = Alexa;
 				SWIFT_VERSION = 3.0;
 			};
@@ -746,10 +823,10 @@
 		84C6A7A81CE4413400E22048 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5N54Q578V4;
+				DEVELOPMENT_TEAM = GVGZ3S662U;
 				INFOPLIST_FILE = SiriExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UnicornChat500.SiriExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode2.UnicornChat500.SiriExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -759,10 +836,10 @@
 		84C6A7A91CE4413400E22048 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5N54Q578V4;
+				DEVELOPMENT_TEAM = GVGZ3S662U;
 				INFOPLIST_FILE = SiriExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UnicornChat500.SiriExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode2.UnicornChat500.SiriExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
