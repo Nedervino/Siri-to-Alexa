@@ -30,7 +30,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84C6A7851CE433A200E22048"
-               BuildableName = "UnicornChat.app"
+               BuildableName = "Alexa.app"
                BlueprintName = "UnicornChat"
                ReferencedContainer = "container:UnicornChat.xcodeproj">
             </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84C6A7851CE433A200E22048"
-            BuildableName = "UnicornChat.app"
+            BuildableName = "Alexa.app"
             BlueprintName = "UnicornChat"
             ReferencedContainer = "container:UnicornChat.xcodeproj">
          </BuildableReference>
@@ -92,7 +92,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84C6A7851CE433A200E22048"
-            BuildableName = "UnicornChat.app"
+            BuildableName = "Alexa.app"
             BlueprintName = "UnicornChat"
             ReferencedContainer = "container:UnicornChat.xcodeproj">
          </BuildableReference>

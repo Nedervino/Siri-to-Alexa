@@ -17,38 +17,30 @@
 }
 
 - (NSString *)sendMessage:(NSString *)message toRecipients:(NSArray *)recipients {
-    
-
     //NSLog(message);
     NSString *encoded = [message stringByReplacingOccurrencesOfString:@" " withString:@"+"];
     //NSLog(encoded);
-    // Sending a synchronous message here...
-    NSString *request = [@"https://smsdoctors.herokuapp.com/alexaengels?q=" stringByAppendingString:encoded];
-    //NSString *encoded = [request stringByReplacingOccurancesOfString:@" " withString:@"%20"];
-    NSLog(request);
+    
+    // Halting until Alexa answer using synchronous request
+    NSString *request = [@"https://smsdoctors.herokuapp.com/alexa?q=" stringByAppendingString:encoded];
+    NSLog(@"%@", request);
     NSURL *url1 = [NSURL URLWithString:request];
     NSURLRequest * urlRequest = [NSURLRequest requestWithURL:url1];
     NSURLResponse * response = nil;
     NSError * error = nil;
     NSData * data = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error];
-    
-    // Store response
-    //NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    
-    //Log response to server
     NSString *answer = [[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:NSUTF8StringEncoding];
+    
+    /*
+    //Log response to server
     NSString *length = [NSString stringWithFormat:@"%d", data.length];
-    //NSLog(length);
-    //NSLog(answer);
-    NSString *aap = [@"https://smsdoctors.herokuapp.com/hackathon?data=" stringByAppendingString:answer];
-    NSURL *url2 = [NSURL URLWithString:aap];
+    NSString *serverUrl = [@"https://smsdoctors.herokuapp.com/hackathon?data=" stringByAppendingString:answer];
+    NSURL *url2 = [NSURL URLWithString:serverUrl];
     NSURLRequest * urlRequest2 = [NSURLRequest requestWithURL:url2];
     NSURLResponse * response2 = nil;
-    NSError * error2 = nil;
-    NSData * data2 = [NSURLConnection sendSynchronousRequest:urlRequest2 returningResponse:&response2 error:&error2];
-    
-    
-    
+    NSError *error2 = nil;
+    NSData *data2 = [NSURLConnection sendSynchronousRequest:urlRequest2 returningResponse:&response2 error:&error2];
+    */
     
     return answer;
 }
