@@ -20,12 +20,12 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
         super.viewDidLoad()
         
-        
-        let url = URL(string: "https://smsdoctors.herokuapp.com/alexa2")
+        //let url = URL(string: "https://smsdoctors.herokuapp.com/alexa2")
+        let url = URL(string: "https://smsdoctors.herokuapp.com/alexaengels2")
         
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             guard error == nil else {
-                print(error)
+                print(error ?? " an undefined error occurred while receiving server response")
                 return
             }
             guard let data = data else {
@@ -36,7 +36,8 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
             print(xmlStr)
             
             let utterance = AVSpeechUtterance(string: xmlStr)
-            utterance.voice = AVSpeechSynthesisVoice(language: "nl-NL")
+            //utterance.voice = AVSpeechSynthesisVoice(language: "nl-NL")
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
             utterance.rate = 0.45
             
             let synthesizer = AVSpeechSynthesizer()
