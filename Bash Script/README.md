@@ -1,4 +1,4 @@
-# AlexaNotificationCurl
+# Bash text-based interaction with Alexa
 Some curl scripts to allow interfacing with Alexa using text as input. This bash setup links Siri's text-based output to the audio format required by the Alexa service.
 
 <h2>Credits</h2>
