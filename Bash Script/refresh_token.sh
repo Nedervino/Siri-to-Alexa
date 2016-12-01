@@ -1,7 +1,7 @@
 #!/bin/bash
 REFRESH=`cat refresh.dat`
-CLIENT_ID="<YOUR_CLIENT_ID>"
-CLIENT_SECRET="<YOUR_CLIENT_SECRET>"
+CLIENT_ID="<PUT YOUR CLIENT ID HERE>"
+CLIENT_SECRET="<PUT YOUR CLIENT SECRET HERE>"
 GRANT_TYPE="refresh_token"
 REDIRECT_URI="https://localhost:9745/authresponse"
 echo "Refreshing token"

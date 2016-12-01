@@ -1,3 +1,13 @@
 **/.DS_Store
 */UnicornChat.xcodeproj/xcuserdata/
 */UnicornChat.xcodeproj/project.xcworkspace/xcuserdata/
+
+#ignore request-specific generated files
+Bash\ Script/response.mp3
+Bash\ Script/response.wav
+Bash\ Script/response.json
+Bash\ Script/espeak.wav
+**/*.log
+
+#ignore sensitive data
+Bash\ Script/ubuntuec2.pem

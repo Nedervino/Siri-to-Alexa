@@ -1,15 +1,9 @@
 # AlexaNotificationCurl
-Some curl scripts to allow interfacing with Alexa using text as input.
-
-<h2>Demo</h2>
-<a href="https://youtu.be/WLPApYslQVM">https://youtu.be/WLPApYslQVM</a>
-
-I'm using this along with OpenCV to do face recognition and then let me know who is at the front door:
-"Simon says, Joe is at the front door."
-
-Initially, I just used my Alexa bluetooth and espeak (very bad sound), but I wanted it to sound like Alexa.  So, I wrote this...
+Some curl scripts to allow interfacing with Alexa using text as input. This bash setup links Siri's text-based output to the audio format required by the Alexa service.
 
 <h2>Credits</h2>
+Based on gravesjohnr's AlexaNotificationCurl <a href="https://github.com/gravesjohnr/AlexaNotificationCurl">https://github.com/gravesjohnr/AlexaNotificationCurl</a>
+
 Motivated by Miguel Mota
 <a href="https://miguelmota.com/blog/alexa-voice-service-with-curl">https://miguelmota.com/blog/alexa-voice-service-with-curl</a>
 
@@ -50,4 +44,4 @@ I setup the refresh_token.sh to run every hour in cron, then I don't worry about
 ./alexa.sh "Tell me a joke"
 
 <h2>Troubleshooting:</h2>
-Look at the various log files for errors.  Also, I 'tee' out the audio sent and audio response.
+Look at the various log files for errors, and tee out both audio sent and audio received
